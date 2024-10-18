@@ -40,7 +40,7 @@ app_options:
 # [End of <app_options>]
 
 # [global settings]
-show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
+show_notifications: false                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
 show_notifications_time: 1200              # 通知显示的时间，单位 ms
 global_ascii: false                        # 切换为 ascii 模式时，是否影响所有窗口：true；false
 # [End of <global settings>]
@@ -281,7 +281,7 @@ preset_color_schemes:
     border_color: 0x362b00
     text_color: 0x009985
     hilited_text_color: 0x98a12a
-    candidate_text_color: 0x969483
+    candidate_text_color: 0xffffff
     hilited_candidate_text_color: 0xffffff
     hilited_candidate_back_color: 0x8236d3
 
