@@ -21,7 +21,7 @@ end
 
 function M.func(input, seg, env)
     -- 日期
-    if (input == M.date) then
+    if (input == M.date or input == "riqi") then
         local current_time = os.time()
         yield_cand(seg, os.date('%Y-%m-%d', current_time))
         yield_cand(seg, os.date('%Y/%m/%d', current_time))
@@ -29,8 +29,10 @@ function M.func(input, seg, env)
         yield_cand(seg, os.date('%Y%m%d', current_time))
         yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0','月'))
 
+    
+
     -- 时间
-    elseif (input == M.time) then
+    elseif (input == M.time or input == "uijm") then
         local current_time = os.time()
         yield_cand(seg, os.date('%H:%M', current_time))
         yield_cand(seg, os.date('%H:%M:%S', current_time))

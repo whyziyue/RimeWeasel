@@ -1,8 +1,6 @@
 -- Rime Lua 扩展 https://github.com/hchunhui/librime-lua
 -- 文档 https://github.com/hchunhui/librime-lua/wiki/Scripting
-
 -- processors:
-
 -- 以词定字，可在 default.yaml → key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
@@ -75,7 +73,6 @@ is_in_user_dict = require("is_in_user_dict")
 cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
 
-
 -- 暴力 GC
 -- 详情 https://github.com/hchunhui/librime-lua/issues/307
 -- 这样也不会导致卡顿，那就每次都调用一下吧，内存稳稳的
@@ -87,11 +84,8 @@ end
 -- 临时用的
 function debug_checker(input, env)
     for cand in input:iter() do
-        yield(ShadowCandidate(
-            cand,
-            cand.type,
-            cand.text,
-            env.engine.context.input .. " - " .. env.engine.context:get_preedit().text .. " - " .. cand.preedit
-        ))
+        yield(ShadowCandidate(cand, cand.type, cand.text, env.engine.context.input .. " - " ..
+            env.engine.context:get_preedit().text .. " - " .. cand.preedit))
     end
 end
+
