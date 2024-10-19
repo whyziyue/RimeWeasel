@@ -48,8 +48,8 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # [style]
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
-  color_scheme: purity_of_form_custom      # 默认配色方案
-  # color_scheme_dark: nord                # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
+  color_scheme: aqua      # 默认配色方案
+  color_scheme_dark: solarized_rock               # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
@@ -277,8 +277,8 @@ preset_color_schemes:
   solarized_rock:
     name: 曬經石／Solarized Rock
     author: "Aben <tntaben@gmail.com>, based on Ethan Schoonover's Solarized color scheme"
-    back_color: 0x362b00
-    border_color: 0x362b00
+    back_color: 0x190B13
+    border_color: 0x190B13
     text_color: 0x009985
     hilited_text_color: 0x98a12a
     candidate_text_color: 0xF9F2FF
