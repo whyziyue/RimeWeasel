@@ -61,6 +61,7 @@ engine:
     - selector
     - navigator
     - express_editor
+    - lua_processor@cold_word_drop_processor
   segmentors:
     - ascii_segmentor
     - matcher
@@ -90,6 +91,7 @@ engine:
     - simplifier@traditionalize                     # 简繁切换
     - lua_filter@search@radical_pinyin              # 部件拆字辅码
     - uniquifier                                    # 去重
+    - lua_filter@cold_word_drop_filter              # 删词
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
