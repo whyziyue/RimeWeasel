@@ -1,0 +1,41 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Mon Nov  4 15:23:10 2024"
+  rime_version: 1.11.2
+patch:
+  "preset_color_schemes/WeChat-keyboard":
+    author: zsakvo
+    back_color: 0xFFFFFF
+    border_color: 0xDDDDDD
+    candidate_text_color: 0x525252
+    comment_text_color: 0x999999
+    hilited_back_color: 0xDDDDDD
+    hilited_candidate_back_color: 0x75B100
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x999999
+    hilited_label_color: 0xFFFFFF
+    hilited_text_color: 0x424242
+    horizontal: true
+    label_color: 0xcac9c8
+    name: "WeChat-keyboard"
+    text_color: 0x424242
+  "style/color_scheme": aqua
+  "style/display_tray_icon": false
+  "style/font_face": MiSans
+  "style/font_point": 14
+  "style/horizontal": true
+  "style/inline_preedit": true
+  "style/label_font_point": 10
+  "style/label_format": "%s"
+  "style/layout/border": 1
+  "style/layout/candidate_spacing": 5
+  "style/layout/corner_radius": 9
+  "style/layout/hilite_padding_x": 6
+  "style/layout/hilite_padding_y": 3
+  "style/layout/hilite_spacing": 4
+  "style/layout/margin_x": 11
+  "style/layout/margin_y": 9
+  "style/layout/min_width": 60
+  "style/layout/round_corner": 6
