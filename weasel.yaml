@@ -48,9 +48,10 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # [style]
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
-  color_scheme: Aqua      # 默认配色方案
-  color_scheme_dark: solarized_rock               # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
-
+  #color_scheme: Aqua      # 默认配色方案
+  #color_scheme_dark: solarized_rock               # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
+  color_scheme: win11light
+  color_scheme_dark: win11dark
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
